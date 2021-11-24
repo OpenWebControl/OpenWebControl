@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <input id="types" placeholder="Type"><br />
+    <input id="user" placeholder="Username"><br />
+    <input id="pass" type="password" placeholder="Password"><br />
+    <button onclick="login();">Login</button>
+
+    <script>
+        function login() {
+            var type = document.getElementById('types').value;
+            var user = document.getElementById('user').value;
+            var pass = document.getElementById('pass').value;
+
+
+            var e = {
+                type: type,
+                username: user,
+                password: pass
+            };
+            console.log(e);
+            fetch("/api/auth/login", {
+                body: JSON.stringify(e),
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                method: "POST"
+            }).then(e => e.json()).then((data) => {
+                console.log(data);
+            });
+        }
+    </script>
+</body>
+</html>

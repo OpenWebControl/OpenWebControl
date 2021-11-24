@@ -20,6 +20,10 @@ app.use('/api', apiRoutes);
 app.use(express.json());
 app.set('json spaces', 4);
 
+app.get('/', (req, res) => {
+    return res.sendFile(__dirname + '/public/index.html');
+});
+
 // Run the webserver
 app.listen(config.main.port, () => {
     logger.info(`app online at port ${config.main.port}!`);
