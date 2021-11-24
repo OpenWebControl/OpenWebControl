@@ -11,7 +11,7 @@ OpenWebControl is the free and open source Direct Admin, cPanel and Plesk altern
       - [x] Basic Config
       - [x] MySQL Config
       - [ ] Pterodactyl config
-  - [ ] Connect to MySQL
+  - [x] Connect to MySQL
   - [ ] **API**
     - [ ] Auth / User
       - [ ] Login
