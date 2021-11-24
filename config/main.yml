@@ -8,3 +8,6 @@ title: "OpenWebControl"
 
 ## The password to get in the Admin panel
 password: "change-me"
+
+## The base url of the panel.!! NO '/' AT THE END !!
+url: 'https://panel.openwebcontrol.com'

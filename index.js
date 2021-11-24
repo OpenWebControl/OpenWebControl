@@ -8,6 +8,7 @@ const yaml = require('js-yaml');
 try {
   const mainConfig = yaml.load(fs.readFileSync('./config/main.yml', 'utf8'));
   const dbConfig = yaml.load(fs.readFileSync('./config/mysql.yml', 'utf8'));
+  const pteroConfig = yaml.load(fs.readFileSync('./config/pterodactyl.yml', 'utf8'));
 } catch (e) {
   console.log(e);
 } 
