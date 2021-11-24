@@ -17,7 +17,8 @@ app.use((req, res, next) => {
 
 // Use api routes
 app.use('/api', apiRoutes);
-app.set('json spaces', 4)
+app.use(express.json());
+app.set('json spaces', 4);
 
 db.query('SELECT 1 + 1;');
 
