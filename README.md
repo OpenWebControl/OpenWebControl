@@ -34,3 +34,13 @@
         - [ ] List databases
         - [ ] Add database
         - [ ] Delete database
+- [ ] **Backend**
+  - [ ] NGINX
+      - [ ] Add proxy (to Pterodactyl container)
+      - [ ] Remove proxy
+      - [ ] Cron job to restart NGINX every hour
+   - [ ] Pterodactyl
+      - [ ] Add server
+      - [ ] Delete server
+      - [ ] Add user
+      - [ ] Delete user
