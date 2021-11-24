@@ -1,0 +1,16 @@
+# Database config
+
+## The database host
+host: 'localhost'
+
+## Port of the database host
+port: 3600
+
+## Username
+username: 'root'
+
+## Password
+password: ''
+
+## Database
+database: 'webhosting'
