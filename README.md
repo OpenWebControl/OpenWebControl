@@ -7,14 +7,17 @@ OpenWebControl is the free and open source Direct Admin, cPanel and Plesk altern
 ## Progress
 - [ ] **Basic**
   - [x] Creating express webserver
-  - [ ] **Add config files**
+  - [x] **Add config files**
       - [x] Basic Config
       - [x] MySQL Config
-      - [ ] Pterodactyl config
+      - [x] Pterodactyl config
   - [x] Connect to MySQL
   - [ ] **API**
     - [ ] Auth / User
       - [ ] Login
+         - [x] Check user in database
+         - [ ] New session
+         - [ ] Send session ID to client
       - [ ] Logout
       - [ ] Check session
       - [ ] Change password
