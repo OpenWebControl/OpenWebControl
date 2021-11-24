@@ -6,7 +6,7 @@
   - [x] Creating express webserver
   - [ ] **Add config files**
       - [x] Basic Config
-      - [ ] MySQL Config
+      - [x] MySQL Config
       - [ ] Pterodactyl config
   - [ ] Connect to MySQL
   - [ ] **API**
