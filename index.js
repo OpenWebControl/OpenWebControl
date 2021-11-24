@@ -10,6 +10,11 @@ const app = express();
 const DataBase = require('./lib/mysql');
 const db = new DataBase();
 
+app.use((req, res, next) => {
+    logger.debug(`${req.method} - ${req.path} - ${res.statusCode}`);
+    return next();
+});
+
 // Use api routes
 app.use('/api', apiRoutes);
 
