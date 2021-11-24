@@ -11,7 +11,11 @@ try {
   console.log(e);
 } 
 
+const apiRoutes = require('./lib/api');
+
 const app = express();
+
+app.use('/api', apiRoutes);
 
 
 // Run the webserver
