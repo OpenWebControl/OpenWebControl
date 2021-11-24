@@ -1,0 +1,7 @@
+# Webserver Config
+
+## The port the webserver will run on
+port: 3000
+
+## The title that will be displayed in the top of the menu
+title: "OpenWebControl"

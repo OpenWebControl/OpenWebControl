@@ -3,9 +3,9 @@
 
 ## Progress
 - [ ] **Basic**
-  - [ ] Creating express webserver
+  - [x] Creating express webserver
   - [ ] **Add config files**
-      - [ ] Basic Config
+      - [x] Basic Config
       - [ ] MySQL Config
       - [ ] Pterodactyl config
   - [ ] Connect to MySQL
