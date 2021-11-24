@@ -7,8 +7,7 @@ const logger = require('./lib/logging');
 const apiRoutes = require('./lib/api');
 
 const app = express();
-const DataBase = require('./lib/mysql');
-const db = new DataBase();
+const query = require('./lib/query');
 
 app.use((req, res, next) => {
     logger.info(`${req.method} - ${req.path} - ${res.statusCode}`);
@@ -19,14 +18,19 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.set('json spaces', 4);
 app.set('view engine', 'ejs');
+const cookieParser = require('cookie-parser');
+const { query } = require('express');
+app.use(cookieParser());
 app.use('/api', apiRoutes);
 
-app.get('/', function(req, res) {
-    res.render(`${config.main.theme}/index`);
-});
-
-app.get('/', (req, res) => {
-    return res.sendFile(__dirname + '/public/index.html');
+app.get('/login', async function(req, res) {
+    if (req.cookies['sessionID']) {
+        var valid = await query.session_valid(req.cookies['sessionID']);
+        if (valid == true) return res.redirect('/');
+    }
+    res.render(`${config.main.theme}/login`, {
+        title: config.main.title
+    });
 });
 
 // Run the webserver
