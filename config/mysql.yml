@@ -13,4 +13,4 @@ username: 'root'
 password: ''
 
 ## Database
-database: 'bot'
+database: 'webhosting'

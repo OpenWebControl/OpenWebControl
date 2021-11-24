@@ -11,7 +11,7 @@ const DataBase = require('./lib/mysql');
 const db = new DataBase();
 
 app.use((req, res, next) => {
-    logger.debug(`${req.method} - ${req.path} - ${res.statusCode}`);
+    logger.info(`${req.method} - ${req.path} - ${res.statusCode}`);
     return next();
 });
 
