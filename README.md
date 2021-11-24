@@ -44,3 +44,11 @@
       - [ ] Delete server
       - [ ] Add user
       - [ ] Delete user
+
+
+## Technologies used
+- MySQL
+- NGINX
+- NodeJS
+- Express
+- Pterodactyl panel
