@@ -11,10 +11,12 @@ try {
   console.log(e);
 } 
 
+// Import api routes
 const apiRoutes = require('./lib/api');
 
 const app = express();
 
+// Use api routes
 app.use('/api', apiRoutes);
 
 
