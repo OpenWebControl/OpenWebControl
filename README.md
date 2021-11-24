@@ -1,6 +1,9 @@
 # OpenWebControl
 > OpenWebControl is the first open source webhosting panel written in NodeJS, MySQL and Pterodactyl Panel
 
+## What is OpenWebControl
+OpenWebControl is the free and open source Direct Admin, cPanel and Plesk alternative
+
 ## Progress
 - [ ] **Basic**
   - [x] Creating express webserver
@@ -44,3 +47,11 @@
       - [ ] Delete server
       - [ ] Add user
       - [ ] Delete user
+
+
+## Technologies used
+- MySQL
+- NGINX
+- NodeJS
+- Express
+- Pterodactyl panel
