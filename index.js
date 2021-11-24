@@ -13,5 +13,5 @@ app.use('/api', apiRoutes);
 
 // Run the webserver
 app.listen(config.main.port, () => {
-    console.log(`App online at port ${mainConfig.port}!`);
+    console.log(`App online at port ${config.main.port}!`);
 });
