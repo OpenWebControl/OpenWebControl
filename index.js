@@ -19,7 +19,6 @@ app.use(express.json());
 app.set('json spaces', 4);
 app.set('view engine', 'ejs');
 const cookieParser = require('cookie-parser');
-const { query } = require('express');
 app.use(cookieParser());
 app.use('/api', apiRoutes);
 
