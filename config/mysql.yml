@@ -4,7 +4,7 @@
 host: 'localhost'
 
 ## Port of the database host
-port: 3600
+port: 3306
 
 ## Username
 username: 'root'
@@ -13,4 +13,4 @@ username: 'root'
 password: ''
 
 ## Database
-database: 'webhosting'
+database: 'bot'
