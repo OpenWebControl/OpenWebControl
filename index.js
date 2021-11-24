@@ -16,9 +16,14 @@ app.use((req, res, next) => {
 });
 
 // Use api routes
-app.use('/api', apiRoutes);
 app.use(express.json());
 app.set('json spaces', 4);
+app.set('view engine', 'ejs');
+app.use('/api', apiRoutes);
+
+app.get('/', function(req, res) {
+    res.render(`${config.main.theme}/index`);
+});
 
 app.get('/', (req, res) => {
     return res.sendFile(__dirname + '/public/index.html');

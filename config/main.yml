@@ -11,3 +11,6 @@ password: "change-me"
 
 ## The base url of the panel.!! NO '/' AT THE END !!
 url: 'https://panel.openwebcontrol.com'
+
+## The theme of the dashboard
+theme: "default"
