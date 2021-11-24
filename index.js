@@ -20,9 +20,6 @@ app.use('/api', apiRoutes);
 app.use(express.json());
 app.set('json spaces', 4);
 
-db.query('SELECT 1 + 1;');
-
-
 // Run the webserver
 app.listen(config.main.port, () => {
     logger.info(`app online at port ${config.main.port}!`);
