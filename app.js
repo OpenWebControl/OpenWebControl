@@ -34,6 +34,7 @@ App['auth']['login'] = async function() {
 
     if (data.ok == false) {
         App.err(data.msg);
+        console.error(data);
     } else {
         window.location = '/';
     }
