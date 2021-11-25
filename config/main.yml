@@ -14,3 +14,7 @@ url: 'https://panel.openwebcontrol.com'
 
 ## The theme of the dashboard
 theme: "blank"
+
+## When a session expires. In milliseconds
+## For debugging, we set it to 2 minutes
+expire: 120000
