@@ -17,7 +17,7 @@ Check the [Wiki](../../wiki) here!
   - [x] Connect to MySQL
   - [ ] **API**
     - [ ] Auth / User
-      - [ ] Login
+      - [x] Login
          - [x] Check user in database
          - [x] New session
          - [x] Send session ID to client
