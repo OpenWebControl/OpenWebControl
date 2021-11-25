@@ -48,6 +48,14 @@ Check the [Wiki](../../wiki) here!
         - [ ] List databases
         - [ ] Add database
         - [ ] Delete database
+     - [ ] **Dashboard**
+        - [ ] GET Requests System
+        - [ ] POST Requests System
+        - [ ] Data sending system
+     - [ ] **Site system**
+       - [ ] Site Adding system
+       - [ ] Site Removing system
+       - [ ] Site Editing system
 - [ ] **Backend**
   - [ ] NGINX
       - [ ] Add proxy (to Pterodactyl container)
@@ -58,8 +66,34 @@ Check the [Wiki](../../wiki) here!
       - [ ] Delete server
       - [ ] Add user
       - [ ] Delete user
+- [ ] **Frontend**
+  - [ ] Pages
+      - [ ] All pages Skeleton
+      - [ ] All pages Style
+      - [ ] All pages Script
+  - [ ] Dashboard
+      - [ ] Main dashboard panel design
+      - [ ] Dashboard panel buttons 
+      - [ ] Dashboard buttons script
+      - [ ] User Dashboard
+      - [ ] Reseller Dashboard
+      - [ ] Admin Dashboard
+- [ ] **System**
+  - [ ] Uptimer
+  - [ ] RAM Provider
+  - [ ] Nameserver 
+  - [ ] DNS records
+  - [ ] Bandwidth calculator
+  - [ ] Domain Checker
+  - [ ] Traffic Checker
+- [ ] Features 
+  - [ ] Uptimer
+  - [ ] Nameserver
+  - [ ] DNS records
+  - [ ] Domain Checker
+  - [ ] Traffic Checker
 
-
+Adding more soon!
 ## 💻Technologies used
 - MySQL
 - NGINX
