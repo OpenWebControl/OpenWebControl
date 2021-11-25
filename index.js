@@ -32,6 +32,16 @@ app.get('/login', async function(req, res) {
     });
 });
 
+app.get('/', async function(req, res) {
+    if (req.cookies['sessionID']) {
+        var valid = await query.session_valid(req.cookies['sessionID']);
+        if (valid == false) return res.redirect('/login');
+    }
+    res.render(`${config.main.theme}/index`, {
+        title: config.main.title
+    });
+});
+
 // Run the webserver
 app.listen(config.main.port, () => {
     logger.info(`App online at http://localhost:${config.main.port} !`);
