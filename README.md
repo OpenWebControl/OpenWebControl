@@ -22,6 +22,9 @@ Check the [Wiki](../../wiki) here!
          - [x] New session
          - [x] Send session ID to client
       - [ ] Logout
+         - [ ] Delete session from database
+         - [ ] Delete cookie from client
+         - [ ] Redirect client to login page
       - [x] Check session
          - [x] Check if session is valid
          - [x] Delete session if expired
