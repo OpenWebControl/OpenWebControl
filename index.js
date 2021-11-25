@@ -48,6 +48,6 @@ app.listen(config.main.port, () => {
 });
 
 setInterval(async () => {
-    logger.info('Checking for expired sessions...');
+    // logger.info('Checking for expired sessions...');
     await query.session_all();
 }, 60 * 1000);
