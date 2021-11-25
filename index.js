@@ -47,6 +47,7 @@ app.listen(config.main.port, () => {
     logger.info(`App online at http://localhost:${config.main.port} !`);
 });
 
-setInterval(() => {
+setInterval(async () => {
     logger.info('Checking for expired sessions...');
+    await query.session_all();
 }, 60 * 1000);
