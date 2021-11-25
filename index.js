@@ -23,20 +23,19 @@ app.use(cookieParser());
 app.use('/api', apiRoutes);
 
 app.get('/login', async function(req, res) {
-    if (req.cookies['sessionID']) {
-        var valid = await query.session_valid(req.cookies['sessionID']);
-        if (valid == true) return res.redirect('/');
-    }
+    var valid = await query.session_valid(req.cookies['sessionID']);
+    if (valid == true) return res.redirect('/');
+
     res.render(`${config.main.theme}/login`, {
         title: config.main.title
     });
 });
 
 app.get('/', async function(req, res) {
-    if (req.cookies['sessionID']) {
-        var valid = await query.session_valid(req.cookies['sessionID']);
-        if (valid == false) return res.redirect('/login');
-    }
+    var valid = await query.session_valid(req.cookies['sessionID']);
+    if (valid == false) return res.redirect('/login');
+
+
     res.render(`${config.main.theme}/index`, {
         title: config.main.title
     });
