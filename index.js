@@ -34,5 +34,9 @@ app.get('/login', async function(req, res) {
 
 // Run the webserver
 app.listen(config.main.port, () => {
-    logger.info(`app online at port ${config.main.port}!`);
+    logger.info(`App online at http://localhost:${config.main.port} !`);
 });
+
+setInterval(() => {
+    logger.info('Checking for expired sessions...');
+}, 60 * 1000);
