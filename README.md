@@ -19,10 +19,12 @@ Check the [Wiki](../../wiki) here!
     - [ ] Auth / User
       - [ ] Login
          - [x] Check user in database
-         - [ ] New session
-         - [ ] Send session ID to client
+         - [x] New session
+         - [x] Send session ID to client
       - [ ] Logout
-      - [ ] Check session
+      - [x] Check session
+         - [x] Check if session is valid
+         - [x] Delete session if expired
       - [ ] Change password
       - [ ] Change email
       - [ ] Get user details
