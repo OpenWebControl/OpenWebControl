@@ -22,6 +22,10 @@ const cookieParser = require('cookie-parser');
 app.use(cookieParser());
 app.use('/api', apiRoutes);
 
+app.get('/app.js', (req, res) => {
+    return res.sendFile(__dirname + '/app.js');
+})
+
 app.get('/login', async function(req, res) {
     var valid = await query.session_valid(req.cookies['sessionID']);
     if (valid == true) return res.redirect('/');
