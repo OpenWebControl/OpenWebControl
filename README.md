@@ -23,15 +23,19 @@ Check the [Wiki](../../wiki) here!
          - [x] Send session ID to client
       - [ ] Logout
          - [ ] Delete session from database
-         - [ ] Delete cookie from client
-         - [ ] Redirect client to login page
+         - [x] Delete cookie from client
+         - [x] Redirect client to login page
       - [x] Check session
          - [x] Check if session is valid
          - [x] Delete session if expired
       - [ ] Change password
       - [ ] Change email
       - [ ] Get user details
+         - [ ] Get user from database
+         - [ ] Hide password
       - [ ] Get user usage
+         - [ ] Get disk usage
+         - [ ] Get other usae
      - [ ] **Files**
         - [ ] List files
         - [ ] Edit file
