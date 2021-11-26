@@ -8,8 +8,12 @@
 </head>
 <body>
     <h1>Login</h1>
-    <input id="types" placeholder="Type"><br />
-    <input id="user" placeholder="Username"><br />
+<select name="type" id="types">
+    <option value="user">User</option>
+    <option value="reseller">Reseller</option>
+    <option value="admin">Admin</option>
+</select> <br>
+  <input id="user" placeholder="Username"><br />
     <input id="pass" type="password" placeholder="Password"><br />
     <button onclick="login();">Login</button>
 
