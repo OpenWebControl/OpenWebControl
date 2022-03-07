@@ -1,4 +1,9 @@
+# ⚠️ **We need more maintainers** ⚠️
+> Please make a issue to apply 
+
+----
 # OpenWebControl
+
 > OpenWebControl is the first open source webhosting panel written in NodeJS, MySQL and Pterodactyl Panel
 
 ## ❓What is OpenWebControl
