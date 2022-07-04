@@ -4,7 +4,7 @@
 ----
 # OpenWebControl
 
-> OpenWebControl is the first open source webhosting panel written in NodeJS, MySQL and Pterodactyl Panel
+> OpenWebControl is the first open source webhosting panel written in NodeJS using Docker.
 
 ## ❓What is OpenWebControl
 OpenWebControl is the free and open source Direct Admin, cPanel and Plesk alternative
@@ -67,14 +67,14 @@ Check the [Wiki](../../wiki) here!
        - [ ] Site Editing system
 - [ ] **Backend**
   - [ ] NGINX
-      - [ ] Add proxy (to Pterodactyl container)
+      - [ ] Connect to NGINXProxyManager
+      - [ ] Add proxy (to docker container)
       - [ ] Remove proxy
-      - [ ] Cron job to restart NGINX every hour
-   - [ ] Pterodactyl
-      - [ ] Add server
-      - [ ] Delete server
-      - [ ] Add user
-      - [ ] Delete user
+   - [ ] Docker
+      - [ ] Create container
+      - [ ] Start/Run container
+      - [ ] Edit container
+      - [ ] Stop/Delete container
 - [ ] **Frontend**
   - [ ] Pages
       - [ ] All pages Skeleton
@@ -104,10 +104,12 @@ Check the [Wiki](../../wiki) here!
 
 Adding more soon!
 ## 💻Technologies used
-- MySQL
+- MongoDB
 - NGINX
 - NodeJS
 - Express
-- Pterodactyl panel
+- Docker
 
 ## ☁️Cloud hosting
+
+*Cloud hosting will come after the 1.0.0 release!*
