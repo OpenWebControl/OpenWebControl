@@ -1,2 +1,2 @@
 # Database config
-data_dir-: '/data/'
+dir: '/data/'

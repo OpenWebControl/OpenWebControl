@@ -1,0 +1,7 @@
+# NGINXProxyManager config
+## Web
+url: 'https://proxy-manager.openwebcontrol.com'
+
+## User
+email: 'user@example.com'
+password: 'PassWord!'
