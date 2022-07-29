@@ -1,5 +1,5 @@
 # ⚠️ **We need more maintainers** ⚠️
-> Please make a issue to apply 
+> Please make an issue to apply 
 
 ----
 # OpenWebControl
