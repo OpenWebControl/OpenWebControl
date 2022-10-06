@@ -5,6 +5,12 @@
 ## ❓What is OpenWebControl
 OpenWebControl is the free and open source Direct Admin, cPanel and Plesk alternative
 
+## 🤔 Why OpenWebControl?
+- Free • Our panel is 100% free!
+- Open source • With other panels, you don't get to see the source code before buying
+- Easy installation • Install the panel easily
+- Scaleable • Running one node or thousands? No problem!
+
 ## 💻 Repos
 ### This repo
 This repo explains all the techical details and the progress of the project.
