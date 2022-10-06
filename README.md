@@ -29,7 +29,7 @@ Check the [Wiki](../../wiki) here!
 
 Adding more soon!
 ## 💻Technologies used
-- MongoDB
+- MySQL
 - NGINX
 - NodeJS
 - Express
