@@ -27,7 +27,6 @@ This will run on a vps or a dedicated server.
 ## 📜Documentation
 Check the [Wiki](../../wiki) here!
 
-Adding more soon!
 ## 💻Technologies used
 - MySQL
 - NGINX
