@@ -1,2 +1,0 @@
-# Data
-The database files :)
