@@ -11,10 +11,11 @@ This repo explains all the techical details and the progress of the project.
 This repo is also for bugreports
 
 ### Panel
-This will be the managent panel for your users
+This will be the managent panel for your users.
+This can run in a container, vps or dedicated server. 
 
 ### Deamon
-This is 
+This will manage all the containers for the websites of the users on your panel.
 This will run on a vps or a dedicated server.
 
 ## 📜Documentation
