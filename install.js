@@ -1,19 +1,30 @@
-const query = require('./lib/query');
+const Data = require('./lib/database');
+const D = new Data();
+const DB = D.getDB();
 const log = require('./lib/logging');
 var { db } = require('./lib/config');
 
 log.warn('Installing...');
 log.info(`Host: ${db.host}\n[>] DataBase: ${db.database}`);
 
-query.install_table('CREATE TABLE `users` ( `ID` INT NOT NULL AUTO_INCREMENT , `type` TEXT NOT NULL , `username` TEXT NOT NULL , `password` TEXT NOT NULL , `email` TEXT NOT NULL , `suspended` BOOLEAN NOT NULL , `limit_storage` INT NOT NULL , `limit_bandwidth` INT NOT NULL , `limit_db` INT NOT NULL , `limit_mail` INT NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;');
-query.install_table('CREATE TABLE `sessions` ( `ID` INT NOT NULL AUTO_INCREMENT , `userID` INT NOT NULL , `sessionID` TEXT NOT NULL , `expire` INT NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;');
-query.install_table('ALTER TABLE `sessions` CHANGE `expire` `expire` TEXT NOT NULL;');
-
-query.install_table("INSERT INTO `users` (`ID`, `type`, `username`, `password`, `email`, `suspended`, `limit_storage`, `limit_bandwidth`, `limit_db`, `limit_mail`) VALUES (NULL, 'admin', 'Admin', 'ChangeMe!', 'admin@mysite.com', '0', '0', '0', '0', '0')");
+DB.users.save({
+    type: 'admin',
+    username: 'Admin',
+    password: 'ChangeMe!',
+    email: 'admin@example.com',
+    suspended: false,
+    limits: {
+        storage: 1000,
+        bandwidth: 1000,
+        databases: 25,
+        mails: 100
+    }
+});
 
 log.warn('Installed!');
 
 setInterval(() => {
+    log.info('------------------------');
     log.warn('Admin username: "Admin"');
     log.warn('Admin password: "ChangeMe!"');
 }, 1000);
